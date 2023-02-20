@@ -76,6 +76,7 @@ img{
     border: 1px solid transparent;
     font-weight: 500;
     transition: var(--transition);
+    border-radius: 0.5rem;
 }
 
 .btn:hover{
