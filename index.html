@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
   </head>
   <body>
     <!-- navbar started -->
@@ -313,8 +317,88 @@
 
 
     <!-- End of FAQ  -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+    <!-- Testimonials -->
+    <section class="container testimonials_container mySwiper">
+<h2>Students' Testimonials</h2>
+<div class="swiper-wrapper">
+
+  <article class="testimonial swiper-slide">
+<div class="avatar"><img src="./images/avatar1.jpg" alt=""></div>
+    <div class="testimonial-info">
+      <h5>Diana Harris</h5>
+      <small>Student</small>
+    </div>
+   <div class="testimonial-body">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus temporibus recusandae sint asperiores tempora dolorem voluptate explicabo quaerat numquam magni?</p>
+   </div>
+  </article>
+  
+  <article class="testimonial swiper-slide">
+    <div class="avatar"><img src="./images/avatar2.jpg" alt=""></div>
+        <div class="testimonial-info">
+          <h5>David Beckham</h5>
+          <small>Web Developer</small>
+        </div>
+       <div class="testimonial-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus temporibus recusandae sint asperiores tempora dolorem voluptate explicabo quaerat numquam magni?</p>
+       </div>
+      </article>
+      
+  <article class="testimonial swiper-slide">
+    <div class="avatar"><img src="./images/avatar3.jpg" alt=""></div>
+        <div class="testimonial-info">
+          <h5>Leo Caprio</h5>
+          <small>Student</small>
+        </div>
+       <div class="testimonial-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus temporibus recusandae sint asperiores tempora dolorem voluptate explicabo quaerat numquam magni?</p>
+       </div>
+      </article>
+      
+  <article class="testimonial swiper-slide">
+    <div class="avatar"><img src="./images/avatar4.jpg" alt=""></div>
+        <div class="testimonial-info">
+          <h5>Wahida Rehman</h5>
+          <small>Model</small>
+        </div>
+       <div class="testimonial-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus temporibus recusandae sint asperiores tempora dolorem voluptate explicabo quaerat numquam magni?</p>
+       </div>
+      </article>
+      
+  <article class="testimonial swiper-slide">
+    <div class="avatar"><img src="./images/avatar5.jpg" alt=""></div>
+        <div class="testimonial-info">
+          <h5>Kate winslet</h5>
+          <small>Student</small>
+        </div>
+       <div class="testimonial-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus temporibus recusandae sint asperiores tempora dolorem voluptate explicabo quaerat numquam magni?</p>
+       </div>
+      </article>
+  
+</div>
+<div class="swiper-pagination"></div>
+    </section>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints:{
+          600:{
+            slidesPerView: 2,
+          }
+        }
+      });
+    </script>
   </body>
 </html>
